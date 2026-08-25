@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.0,
+          "height": 2.5,
+          "width": 2.0
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -52,8 +52,8 @@
         "zones": {
           "border_display_style": 2,
           "border_hatch_pitch": 0.5,
-          "corner_radius": 0.0,
-          "corner_smoothing": 0,
+          "corner_radius": 0.1,
+          "corner_smoothing": 1,
           "fill_mode": 0,
           "hatch_gap": 1.5,
           "hatch_orientation": 0.0,
@@ -61,7 +61,7 @@
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
           "min_clearance": 0.0,
-          "min_island_area": 0.0013161349,
+          "min_island_area": 10.0,
           "min_thickness": 0.025,
           "pad_connection": 2,
           "remove_islands": 0,
@@ -162,7 +162,7 @@
         "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -546,6 +546,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -591,6 +592,12 @@
         },
         {
           "group_by": true,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
           "show": true
@@ -605,12 +612,6 @@
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "Footprint",
-          "name": "Footprint",
           "show": true
         },
         {
@@ -764,7 +765,7 @@
         "uuid": "d9bcb3ae-2a0c-45f9-9ce2-29d49931e58b"
       }
     ],
-    "used_designators": "SW1-2,Q1,U1-8,J1-6,R1-26,C1-36,D1-3,D7,L1-4,Y1,#PWR1-54,#PWR110-116,#PWR119-120,ANT1",
+    "used_designators": "SCL1,SDA1,U1-8,D1-3,D7,Q1,3V1,C1-36,R1-26,TP1-12,Alert1,TX1,IO1-9,SW1-2,RX1,GND1,ANT1,#PWR1-60,#PWR110-116,#PWR119-120,Y1,L1-4,J1-6",
     "variants": []
   },
   "sheets": [
